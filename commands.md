@@ -2,19 +2,6 @@
 Commands and resources for filtering and processing FASTQ, FASTA, BAM, VCF, BED, GTF etc files. 
 Also contains some useful bashrc aliases. 
 
-## Resources and sources
-
-- file format specs http://samtools.github.io/hts-specs/
-- one liners https://github.com/stephenturner/oneliners
-- general tips and commands https://bioexpressblog.wordpress.com/
-- bash and perl one liners http://genomics-array.blogspot.com/2010/11/some-unixperl-oneliners-for.html
-- bash one liners http://genomespot.blogspot.com/2013/08/a-selection-of-useful-bash-one-liners.html
-- samtools tips for SAM/BAM https://davetang.org/wiki/tiki-index.php?page=SAMTools
-- VCF tips https://github.com/davetang/learning_vcf_file
-- reproducible bioinformatics https://davetang.org/muse/2019/12/04/reproducible-bioinformatics/
-- rules for reproducible computational research https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285
-- add info to a fasta header https://www.biostars.org/p/212379/#212393
-
 ### print lines containing the number 5 from a file 
     grep -n 5 file.txt 
     
