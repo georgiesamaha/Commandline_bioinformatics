@@ -30,7 +30,7 @@ Also contains some useful bashrc aliases.
 ### count number of reads in a FASTQ 
     cat in.fq | echo $((`wc -l`/4))
     
-### extract reads from FASTQ according to read name
+### extract reads from FASTQ according to read name 
     zcat in.fastq.gz | awk 'BEGIN{RS="@";FS="\n"}; $1~/name/{print $2; exit}'
  
 ### extract all lines on a chr (A1) between two bp locations from a VCF
