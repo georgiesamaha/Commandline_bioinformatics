@@ -14,6 +14,7 @@ Also contains some useful bashrc aliases.
 - reproducible bioinformatics https://davetang.org/muse/2019/12/04/reproducible-bioinformatics/
 - rules for reproducible computational research https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285
 - add info to a fasta header https://www.biostars.org/p/212379/#212393
+- http://plindenbaum.blogspot.com/
 
 ### print lines containing the number 5 from a file 
     grep -n 5 file.txt 
