@@ -1,9 +1,10 @@
 #!/bin/bash 
 
 # calculates intermarker distance and maximum distance for a list of snps.
-# input is bim format, for vcf change $4 to $2 in awk command 
+# input is bim format, for vcf change $4 to $2 in awk  
 # where C= chr/contig, P=previous marker position, M= max distance, T= total length, N= number variants, L=current distance
 # run as intermarkerdistance.sh <filename>
+# output as chr/avg_intermarker_dist/maximum_dist per chromosome
 
 function input(){
 for chr in {1..18};
