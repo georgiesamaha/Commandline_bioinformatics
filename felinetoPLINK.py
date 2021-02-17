@@ -2,22 +2,13 @@
 
   # Reformat feline chromosome nomenclature to numerical format for use in PLINK 
   # PLINK requires autosome input in numerical format, this python script changes format of VCF from A1,A2,A3... to 1,2,3 and outputs as new file. 
-  # Run as felineplink.py <input.vcf> 
-  # Run from directory containing VCF, will output new vcf in same location
-    
-#!/usr/bin/python
-
-  # Reformat feline chromosome nomenclature to numerical format for use in PLINK 
-  # PLINK requires autosome input in numerical format, this python script changes
-  # format of VCF from A1,A2,A3... to 1,2,3. 
-  
-  # Run as felineplink.py <input.vcf> 
+  # Run as felineplink.py <input.vcf> <output.vcf>
   # Run from directory containing VCF, will output new vcf in same location
     
 import sys 
 
 VCF = open(sys.argv[1], "r")
-VCFPLINK = open("output.test.vcf", "w+")
+VCFPLINK = open(sys.argv[2], "w+")
 
 for i, line in enumerate(VCF, 0):
 		VCF_info=(line.split("\t")) 
