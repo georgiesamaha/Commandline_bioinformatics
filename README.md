@@ -44,6 +44,9 @@ Also contains some useful bashrc aliases.
 ### add to FASTA header 
     paste <(cat info.txt) <(cat in.fasta | paste - - | cut -c2-) | awk '{printf(">%s_%s\n%s\n",$1,$2,$3);}'
  
+### collect read size from fastq file 
+    zcat read1.fastq.gz | head -n 2 | tail -n 2 | wc -c
+
 ### find where reads with coverage >5 from BAM file 
     bedtools genomecov -bg -ibam in.bam | awk '$4>=5'
  
