@@ -87,7 +87,10 @@ Also contains some useful bashrc aliases.
     alias rm="rm -i"
 
 ### shortcuts for regularly used directories/files 
+    ```
     alias ref="/path/to/reference/fasta.fasta"
+    cd ${ref} 
+    ```
 
 ### shortcut for opening a bam in tview aligned to reference 
     alias tvsample1='samtools tview /path/to/sample1.final.bam /path/to/reference.fasta'
