@@ -3,6 +3,8 @@ Commands and resources for filtering and processing FASTQ, FASTA, BAM, VCF, BED,
 Also contains some useful bashrc aliases. 
 
 ## Resources and sources
+- [bash tutorials](https://linuxize.com/tags/terminal/)  
+
 
 - file format specs http://samtools.github.io/hts-specs/
 - one liners https://github.com/stephenturner/oneliners
