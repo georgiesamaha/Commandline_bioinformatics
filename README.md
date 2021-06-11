@@ -38,7 +38,7 @@ Also contains some useful bashrc aliases.
     zcat in.fastq.gz | awk 'BEGIN{RS="@";FS="\n"}; $1~/name/{print $2; exit}'
  
 ### extract all lines on a chr (A1) between two bp locations from a VCF
-    zcat in.vcf.gz | awk '$1=="A1"' | awk '$3>=100000' | awk '$3<=150000'
+    zcat in.vcf.gz | awk '$1=="A1" && $3>=100000 && $3<=150000' 
  
 ### reverse compliment a sequence 
     echo 'ACTG' | rev | tr 'ACTG' 'TGAC'
