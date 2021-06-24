@@ -56,7 +56,7 @@ Also contains some useful bashrc aliases.
     bedtools genomecov -bg -ibam test.bam | awk '$4>=5' | bedtools coverage -a stdin -b in.bam
  
 ### VCF > BED  (sorted and merged)
-    zcat in.vcf.gz awk '{ if (!/^#/) print $1"\t"$2"      \t"$2+1}' | sort -k1,1 -k2,2n | bedtools merge -i stdin
+    zcat in.vcf.gz | awk '{ if (!/^#/) print $1"\t"$2"      \t"$2+1}' | sort -k1,1 -k2,2n | bedtools merge -i stdin
  
 ### VCF > BED with awk/sed 
     zcat in.vcf.gz | sed -e 's/chr//' | awk '{OFS="\t"; if (!/^#/){print $1,$2-1,$2,$4"/"$5,"+"}}'
