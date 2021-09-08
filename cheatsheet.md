@@ -4,7 +4,7 @@
 
 ### Checking job status 
 
-Set permissions 
+Set permissions. Adjusts permissions for every file created in a directory so that others in the group have rw perms to the files  
 ```
 alias setfacl='setfacl -Rm u::rwX,g::rwX,o::-'
 ```
