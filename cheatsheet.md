@@ -4,6 +4,11 @@
 
 ### Checking job status 
 
+Set permissions 
+```
+alias setfacl='setfacl -Rm u::rwX,g::rwX,o::-'
+```
+
 To print verbose status of running jobs
 ```
 qstat -u gs5517 -Esw 
