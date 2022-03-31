@@ -13,6 +13,9 @@ VCFPLINK = open(sys.argv[2], "w+")
 for i, line in enumerate(VCF, 0):
 		VCF_info=(line.split("\t")) 
 		chr_id=VCF_info[0]
+		if  line.startswith('#'):
+                        hash_line = line[0:]
+                        VCFPLINK.write(hash_line)
 		if chr_id=='A1':
 			VCFPLINK.write(line.replace('A1','1', 1))
 		elif chr_id=='A2':
