@@ -70,7 +70,8 @@ Also contains some useful bashrc aliases.
 ### get sample IDs from VCF
     zcat in.vcf.gz | grep "^#CHROM" | tr '\t' '\n' | grep -v -E '#CHROM|POS|ID|REF|ALT|QUAL|FILTER|INFO|FORMAT'
  
- 
+### get list of chromosomes from bam header 
+    samtools view -H in.bam |  cut -f2 | grep '^SN:chr' | sed s'/SN://'
 
 ## useful aliases for bashrc 
 
